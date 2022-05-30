@@ -1,0 +1,75 @@
+
+XML
+ 1. Создать внешний репозиторий c названием XML. 
+ ---> В GitHub кликнуть на кнопку New --> в Repository name прописать XML --> 
+ сделать репозиторий публичным -->  Add a README file --> Кликнуть на кнопку Creat repository
+ 2. Клонировать репозиторий XML на локальный компьютер. 
+ ---> git clone ссылка на репозиторий (в необходимом репозитории кликнуть справа на кнопку Code и скопировать HTTPS)
+ 3. Внутри локального XML создать файл “new.xml”. 
+ ---> touch new.xml
+ 4. Добавить файл под гит. 
+ ---> git add new.xml
+ 5. Закоммитить файл. 
+ ---> git commit -m "the first xml"
+ 6. Отправить файл на внешний GitHub репозиторий. 
+ ---> git push
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, 
+ будущая желаемая зарплата). Всё написать в формате XML. 
+ ---> vim new.xml --> press I
+<PERSON>
+  <name>Korol Dmitriy</name>
+  <age>32</age>
+  <animals>null</animals>
+  <salary>2000$<salary>
+</PERSON>
+   ESC - :wq
+ 8. Отправить изменения на внешний репозиторий. 
+ ---> git add new.xml --> git commit -m "questionnaire" --> git push
+ 9. Создать файл preferences.xml
+ ---> touch preferences.xml 
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, 
+ страна которую хотели бы посетить) в формате XML. 
+ ---> vim preferences.xml --> press I
+<QUESTIONNAIRE>
+   <movie>What we do in the shadows</movie>
+   <show>Rick and Morty</show>
+   <food>rare steak</food>
+   <season>winter</season>
+   <country>Japan</country>
+</QUESTIONNAIRE>
+   ESC - :wq
+ 11. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML 
+ ---> touch skills.xml --> vim skills.xml --> press I 
+
+<QACOURSES>    
+	<skills>git bash, git, JavaScript, QA theory</skills>
+</QACOURSES> 
+
+ Жму ESC - :wq
+ 12. Отправить сразу 2 файла на внешний репозиторий.
+ ---> git add . --> git commit -m "the second and third xml" --> git push
+ 13. На веб интерфейсе создать файл bug_report.xml
+ --->  в репозитории xml кликнуть на кнопку ADD FILE --> creat new file 
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+ ---> вписать внизу страницы
+ 15. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. 
+ ---> в репозитории XML находим нужный файл и кликаем по его названию --> справа кликаем на значок карандаша (редактирование) --> 
+
+<BUGREPORT>
+  	<BugID>22<BugID>
+	<Title>the exchange rate changes when the widget is resized</Tittle>
+	<Severity>Major</Severity>
+	<Priority>Medium</Priority>
+	<Environment>SGS 10+(SM-G975F/DS), android 12 (G975FXXUEHVB9), ONE UI 4.1,  5x6, 2280x1080</Environment>
+	<Precondition>Install the AndroidGridTest application</Precondition>
+	<Str1>add widget through smartphone settings</Str1> 
+ 	<Str2>resize widget from small to large (vertically and horizontally)</Str2>
+	<Ar>the data in the widget does not change</Ar>
+	<Er1>BTC/USD price has changed (resizing the widget vertically)</Er1>
+    	<Er2>percentages change from positive to negative (resizing the widget horizontally)</Er2>
+</BUGREPORT>
+
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ ---> кликаю внизу на кнопку Commit changes (сохранить)
+ 17. Синхронизировать внешний и локальный репозиторий XML
+ ---> git pull (в терминале)
